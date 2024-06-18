@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Contact Us</title>
-	<link rel="icon" type="image/x-icon" href="https://s40066.pcdn.co/wp-content/uploads/2024/01/Icon-Fill-Form.png">
-	<link rel="stylesheet" href="assets/css/Google Sheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<form method="post" action="https://script.google.com/macros/s/AKfycby7uE1HGaPxqjkgsAYNlvWAF6eSSiI2YLAydmEHl2w2zi1k6dykN-PEsoINNvajzzM7/exec" name="contact-form">
-			<h4>Contact Us</h4>
-			<input type="text" name="your-name" placeholder="Full Name">
-			<input type="text" name="your-number" placeholder="Phone">
-			<input type="email" name="your-email" placeholder="Email address">
-			<textarea name="message" rows="7" placeholder="Message"></textarea>
-			<input type="submit" value="Submit" id="submit">
-		</form>
-	</div>
-
-	<script src="assets/js/Google Sheet.js"></script>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="nama">Name:</label>
+        <input type="text" id="nama" name="nama" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="pesan">Message:</label>
+        <textarea id="pesan" name="pesan" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="status"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
